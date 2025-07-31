@@ -13,10 +13,10 @@ AI-powered code reviewer for GitHub pull requests. Asynchronously processes PR d
 
 
 
-docker-compose down --volumes --rmi all
-docker builder prune -f
-docker-compose build --no-cache
-docker-compose up
+- docker-compose down --volumes --rmi all
+- docker builder prune -f
+- docker-compose build --no-cache
+- docker-compose up
 
 
 
