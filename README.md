@@ -17,3 +17,16 @@ docker-compose down --volumes --rmi all
 docker builder prune -f
 docker-compose build --no-cache
 docker-compose up
+
+
+
+curl request : 
+
+curl -X POST http://localhost:8000/analyze-pr \
+  -H "Content-Type: application/json" \
+  -d '{"repo_url": "https://github.com/qdrant/qdrant", "pr_number": 6948}'
+
+
+curl -X GET http://localhost:8000/status/<task_id>
+
+curl -X GET http://localhost:8000/results/<task-id>
